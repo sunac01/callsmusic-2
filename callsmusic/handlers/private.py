@@ -22,25 +22,23 @@ from ..helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""I am an open-source @CallsMusic bot, I let you play music in your group’s voice chat.
-
-The commands I currently support are:
-
-/play - play the replied audio file or YouTube video
-/pause - pause the audio stream
-/resume - resume the audio stream
-/skip - skip the current audio stream
-/stop - clear the queue and remove the userbot from the call
-/channel - set chat channel (once set, the bot will play in that channel’s call)
+         f"""Ben **{bn}** !!
+Grubunuzun sesli sohbetinde müzik çalabilirim 🔮
+Şu anda desteklediğim komutlar şunlardır:
+🦎 /play - __Yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.__
+🦎 /pause - __Sesli Sohbet Müziğini Duraklat.__
+🦎 /resume - __Sesli Sohbet Müziğine Devam Et.__
+🦎 /skip - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
+🦎 /stop - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        'Group', url='https://t.me/callsmusicchat',
+                        "Sahibi 📬", url="https://t.me/Azerbesk"
                     ),
                     InlineKeyboardButton(
-                        'Channel', url='https://t.me/callsmusic',
+                        "Kanal 📣", url="https://t.me/kaybedenlerorkestrasi"
                     ),
                 ],
             ],
